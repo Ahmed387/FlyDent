@@ -1,0 +1,28 @@
+.sliderContainer :global(.slick-prev),
+.sliderContainer :global(.slick-next) {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.sliderContainer :global(.slick-prev:hover),
+.sliderContainer :global(.slick-next:hover) {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.sliderContainer :global(.slick-dots) {
+  bottom: -40px;
+}
+
+.sliderContainer :global(.slick-dots li button:before) {
+  color: #60A5FA;
+  opacity: 0.5;
+}
+
+.sliderContainer :global(.slick-dots li.slick-active button:before) {
+  opacity: 1;
+  color: #3B82F6;
+}
