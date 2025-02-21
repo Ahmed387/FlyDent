@@ -7,6 +7,7 @@ import Reservation from "./components/Reservation/Reservation";
 import Notfound from "./components/Notfound/Notfound";
 import Appear from "./components/Appear/Appear";
 import { ToastContainer } from "react-toastify";
+import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,9 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, []);
   <ToastContainer position="top-center" autoClose={2000} />;
   return <RouterProvider router={router} />;
 }
